@@ -1,0 +1,26 @@
+/* Smooth transition */
+.nav-link {
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Text color change on hover */
+.nav-link:hover {
+  color: #4a0e6b !important;   /* Bootstrap blue */
+}
+
+/* Underline animation */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: #4a0e6b;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
