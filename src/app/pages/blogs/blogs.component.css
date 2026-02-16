@@ -1,0 +1,45 @@
+.blog-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.blog-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+
+.blog-title {
+  min-height: 48px;
+}
+
+.blog-desc {
+  min-height: 72px;
+}
+
+
+.showcase-card {
+  width: 100%;
+  max-height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.08);
+}
