@@ -8,5 +8,11 @@ export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'features', component: FeaturesComponent },
   { path: 'blogs', component: BlogsComponent },
-  { path: 'templates', component: TemplatesComponent }
+  { path: 'templates', component: TemplatesComponent },
+  {
+  path: 'customize/:type',
+  loadComponent: () => import('./pages/customize-template/customize-template.component')
+      .then(m => m.CustomizeTemplateComponent)
+    }
+
 ];

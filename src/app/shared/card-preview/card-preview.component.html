@@ -1,0 +1,20 @@
+
+<div class="card-template"
+     [ngClass]="template">
+
+  <!-- ⭐ renamed class -->
+  <div class="template-header">
+   <img [src]="user.image || 'assets/images/profile.png'"
+     class="profile-img"/>
+  </div>
+
+  <div class="card-body">
+    <h4>{{ user.name }}</h4>
+    <h5>{{ user.role }}</h5>
+    <h5>{{ user.phone }}</h5>
+    <h5>{{ user.mail }}</h5>
+
+    
+  </div>
+
+</div>
